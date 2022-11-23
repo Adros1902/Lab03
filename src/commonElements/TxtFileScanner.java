@@ -1,21 +1,31 @@
 package commonElements;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class TxtFileScanner {
-    public ArrayList<MenuElement> menuElementsData = new ArrayList<>();
+    public ArrayList<Integer> dataScanned = new ArrayList<>();
+    public boolean fileIsEmpty = false;
     public TxtFileScanner(String fileName) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File(fileName));
-        while (scanner.hasNext()) {
-            int menuElementId = scanner.nextInt();
-            String menuElementName = scanner.next();
-            int menuElementPrice = scanner.nextInt();
-            int menuElementTime = scanner.nextInt();
-            MenuElement menuElement = new MenuElement(menuElementId, menuElementName, menuElementPrice, menuElementTime);
-            menuElementsData.add(menuElement);
+        File fileToScan = new File(fileName);
+        if(fileToScan.canRead()){
+        fileIsEmpty = false;
+        Scanner txtScanner = new Scanner(fileToScan);
+        while(txtScanner.hasNext()){
+            if(txtScanner.hasNextInt()) {
+                dataScanned.add(txtScanner.nextInt());
+            } else {
+                String tempInputString;
+                tempInputString = txtScanner.next();
+                int tempInputInt = Integer.parseInt(tempInputString);
+                dataScanned.add(tempInputInt);
+            }
         }
-    }}
-
+        } else {
+            CreateNewFile newFileCreated = new CreateNewFile(fileName);
+            fileIsEmpty = true;
+        }
+    }
+}
