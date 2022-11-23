@@ -5,10 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TxtFileScanner {
+public class TxtIntFileScanner {
     public ArrayList<Integer> dataScanned = new ArrayList<>();
     public boolean fileIsEmpty = false;
-    public TxtFileScanner(String fileName) throws FileNotFoundException {
+    public TxtIntFileScanner(String fileName) throws FileNotFoundException {
         File fileToScan = new File(fileName);
         if(fileToScan.canRead()){
         fileIsEmpty = false;
@@ -24,7 +24,7 @@ public class TxtFileScanner {
             }
         }
         } else {
-            CreateNewFile newFileCreated = new CreateNewFile(fileName);
+            new CreateNewFile(fileName);
             fileIsEmpty = true;
         }
     }

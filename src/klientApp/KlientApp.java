@@ -1,9 +1,6 @@
 package klientApp;
 
-import commonElements.MenuElement;
-import commonElements.MenuFileScanner;
-import commonElements.TxtFileScanner;
-import commonElements.TxtFileWriter;
+import commonElements.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,6 +10,7 @@ import java.util.Scanner;
 public class KlientApp {
 
     public static void main(String[] args) throws IOException {
+        ClockTime clock = new ClockTime();
         System.out.println("mass");
         MenuFileScanner scanner = new MenuFileScanner("menu.txt");
         Scanner clientScanner = new Scanner(System.in);
@@ -20,8 +18,8 @@ public class KlientApp {
         int amountOfMenuElements = menuElements.size();
         int clientId = 0;
         ArrayList<Integer> currentClientsId = new ArrayList<>();
-        TxtFileScanner txtFileScanner = new TxtFileScanner("clientsId.txt");
-        if(txtFileScanner.fileIsEmpty){
+        TxtIntFileScanner txtIntFileScanner = new TxtIntFileScanner("clientsId.txt");
+        if(txtIntFileScanner.fileIsEmpty){
             int i = 1;
             try{
             FileWriter textWriter = new FileWriter("clientsId.txt");
@@ -35,8 +33,8 @@ public class KlientApp {
             clientId=i;
         }else{
             System.out.println("enis123");
-            for(int i = 0;i < txtFileScanner.dataScanned.size();i++){
-                currentClientsId.add(txtFileScanner.dataScanned.get(i)+1);
+            for(int i = 0; i < txtIntFileScanner.dataScanned.size(); i++){
+                currentClientsId.add(txtIntFileScanner.dataScanned.get(i)+1);
             }
             clientId = currentClientsId.size()+1;
             FileWriter textWriter = new FileWriter("clientsId.txt",true);
