@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b1a3939-ab78-4af4-b3a1-580a25873b9e" name="Changes" comment="" />
+    <list default="true" id="1b1a3939-ab78-4af4-b3a1-580a25873b9e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientsId.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clientsId.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab03/commonElements/TxtFileScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab03/commonElements/TxtFileWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab03/klientApp/KlientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab03/klientApp/KlientApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commonElements/TxtIntFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonElements/TxtIntFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/klientApp/KlientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/klientApp/KlientApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +20,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Hv2ThWsL5cjqG6FjcB5XealvyI" />
   <component name="ProjectViewState">
@@ -19,9 +34,22 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="klientApp.KlientApp" />
+      <module name="Lab03" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,10 +59,22 @@
       <option name="presentableId" value="Default" />
       <updated>1669151245580</updated>
       <workItem from="1669151247129" duration="5000" />
+      <workItem from="1669292969117" duration="2134000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -41,7 +41,17 @@ public class KlientApp {
             textWriter.write(String.valueOf(clientId));
             textWriter.write(System.lineSeparator());
             textWriter.close();
+            System.out.println("test1");
         }
+//        if(clientId >2){
+//            TxtIntFileWriter intWriter = new TxtIntFileWriter();
+//            intWriter.clearFile("clientsId.txt");
+//            FileWriter textWriter = new FileWriter("clientsId.txt");
+//            textWriter.write(String.valueOf(clientId));
+//            textWriter.write(System.lineSeparator());
+//            textWriter.close();
+//            System.out.println("test2");
+//        }
         System.out.println("Aby rozpoczac wpisz slowo 'start'");
         System.out.println("Witamy! Twoj indywidualny numer klienta to: "+clientId+"\n"+"Ponizej znajduje sie menu:");
 
