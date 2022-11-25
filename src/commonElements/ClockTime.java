@@ -15,16 +15,25 @@ public class ClockTime {
         writeTime.write(System.lineSeparator());
         writeTime.close();
     }
-    public void addTime() throws IOException {
-        TxtIntFileScanner scannerTime = new TxtIntFileScanner("clock.txt");
-        FileWriter writeTime = new FileWriter("clock.txt",true);
+    public void addTime() {
+        TxtFileScanner scannerTime = new TxtFileScanner();
+        scannerTime.txtIntFileScanner("clock.txt");
+        FileWriter writeTime = null;
+        try {
+            writeTime = new FileWriter("clock.txt",true);
+            writeTime.write(String.valueOf(scannerTime.dataScanned.size()));
+            writeTime.write(System.lineSeparator());
+            writeTime.close();
+            refresh();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        writeTime.write(String.valueOf(scannerTime.dataScanned.size()+1));
-        writeTime.write(System.lineSeparator());
-        writeTime.close();
+
     }
-    public int updateTime() throws FileNotFoundException {
-        TxtIntFileScanner scannerTime = new TxtIntFileScanner("clock.txt");
+    public int refresh() throws FileNotFoundException {
+        TxtFileScanner scannerTime = new TxtFileScanner();
+        scannerTime.txtIntFileScanner("clock.txt");
         int currentTime = Collections.max(scannerTime.dataScanned);
         return currentTime;
     }

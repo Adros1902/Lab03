@@ -2,6 +2,7 @@ package commonElements;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class MenuFileScanner {
@@ -16,5 +17,6 @@ public class MenuFileScanner {
             MenuElement menuElement = new MenuElement(menuElementId, menuElementName, menuElementPrice, menuElementTime);
             menuElementsData.add(menuElement);
         }
+
     }}
 

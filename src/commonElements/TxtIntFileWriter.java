@@ -5,16 +5,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class TxtIntFileWriter {
-    public void writeInt(String txtFileWriterName, int intToWrite) throws IOException {
+    public void writeInt(String txtFileWriterName,int intToWrite) throws IOException {
         FileWriter txtFileWriter = new FileWriter(new File(txtFileWriterName),true);
         txtFileWriter.write(String.valueOf(intToWrite));
+        txtFileWriter.write(System.lineSeparator());
         txtFileWriter.close();
     }
     public void clearFile(String txtFileWriterName) throws IOException {
         FileWriter txtFileWriter = new FileWriter(new File(txtFileWriterName));
         txtFileWriter.close();
     }
-    public void writerReplaceInt(String txtFileWriterName, int intToWrite) throws IOException {
-        FileWriter txtFileWriter = new FileWriter(new File(txtFileWriterName));
-    }
+//    public void writerReplaceInt(String txtFileWriterName, int intToWrite) throws IOException {
+//        FileWriter txtFileWriter = new FileWriter(new File(txtFileWriterName));
+//    }
 }
