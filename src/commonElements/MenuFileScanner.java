@@ -7,6 +7,11 @@ import java.util.Scanner;
 
 public class MenuFileScanner {
     public ArrayList<MenuElement> menuElementsData = new ArrayList<>();
+
+    public ArrayList<MenuElement> getMenuElementsData() {
+        return menuElementsData;
+    }
+
     public MenuFileScanner(String fileName) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(fileName));
         while (scanner.hasNext()) {
@@ -18,5 +23,6 @@ public class MenuFileScanner {
             menuElementsData.add(menuElement);
         }
 
-    }}
+    }
+}
 

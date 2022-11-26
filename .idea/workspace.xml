@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b1a3939-ab78-4af4-b3a1-580a25873b9e" name="Changes" comment="2 dzien">
-      <change afterPath="$PROJECT_DIR$/src/commonElements/UserInputScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientsId.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clock.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab03/commonElements/ClockTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab03/commonElements/ClockTime.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab03/commonElements/MenuFileScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab03/commonElements/MenuFileScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab03/commonElements/TxtIntFileScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab03/commonElements/TxtIntFileWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab03/commonElements/TxtIntFileWriter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab03/klientApp/KlientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab03/klientApp/KlientApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commonElements/ClockTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonElements/ClockTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commonElements/MenuFileScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonElements/MenuFileScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonElements/TxtIntFileScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonElements/TxtFileScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonElements/TxtIntFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonElements/TxtIntFileWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/klientApp/KlientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/klientApp/KlientApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kucharzApp/KucharzApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kucharzApp/KucharzApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sprzedawcaApp/SprzedawcaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprzedawcaApp/SprzedawcaApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.KucharzApp">
+    <configuration name="KlientApp" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="klientApp.KlientApp" />
       <module name="Lab03" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KucharzApp" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="kucharzApp.KucharzApp" />
+      <module name="Lab03" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.KlientApp" />
+      <item itemvalue="Application.KucharzApp" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,6 +81,14 @@
       <workItem from="1669151247129" duration="5000" />
       <workItem from="1669292969117" duration="2134000" />
     </task>
+    <task id="LOCAL-00001" summary="dzien2.5">
+      <created>1669393137389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669393137389</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +104,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dzien2.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="dzien2.5" />
   </component>
 </project>

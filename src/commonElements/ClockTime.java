@@ -8,20 +8,20 @@ import java.util.Collections;
 public class ClockTime {
 
 
-    public void clock() throws IOException {
-        new CreateNewFile("clock.txt");
-        FileWriter writeTime = new FileWriter("clock.txt");
-        writeTime.write(String.valueOf(0));
-        writeTime.write(System.lineSeparator());
-        writeTime.close();
-    }
+//    public void clock() throws IOException {
+//        new CreateNewFile("clock.txt");
+//        FileWriter writeTime = new FileWriter("clock.txt");
+//        writeTime.write(String.valueOf(0));
+//        writeTime.write(System.lineSeparator());
+//        writeTime.close();
+//    }
     public void addTime() {
         TxtFileScanner scannerTime = new TxtFileScanner();
         scannerTime.txtIntFileScanner("clock.txt");
         FileWriter writeTime = null;
         try {
-            writeTime = new FileWriter("clock.txt",true);
-            writeTime.write(String.valueOf(scannerTime.dataScanned.size()));
+            writeTime = new FileWriter("clock.txt");
+            writeTime.write(String.valueOf(scannerTime.dataScanned.get(0)+1));
             writeTime.write(System.lineSeparator());
             writeTime.close();
             refresh();
@@ -31,7 +31,7 @@ public class ClockTime {
 
 
     }
-    public int refresh() throws FileNotFoundException {
+    public int refresh() {
         TxtFileScanner scannerTime = new TxtFileScanner();
         scannerTime.txtIntFileScanner("clock.txt");
         int currentTime = Collections.max(scannerTime.dataScanned);
